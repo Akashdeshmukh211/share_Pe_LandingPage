@@ -1,6 +1,6 @@
 <h1>Share Pe Landing Page </h1>
-<p>Create this landing page using basic HTML,CSS,JavaScript PHP
- and Bootstrap </p>
+<p>Create this landing page using basic HTML,CSS,JavaScript 
+,PHP and Bootstrap </p>
 <h5>With Following Section</h5>
 <ul>
   <li>Header Section</li>
