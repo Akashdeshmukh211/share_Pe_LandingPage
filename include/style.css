@@ -1,0 +1,483 @@
+/**
+* Landing page for sharpain
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #272829;
+}
+
+a {
+  color: #440197;
+}
+
+a:hover {
+  color: #440197;
+  text-decoration: none;
+}
+samp {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+.slide-container {
+  position: relative;
+  width: 100%;
+}
+.slide {
+  color: #000;
+  display: none;
+}
+.slider {
+  text-align: end;
+  gap: 1rem;
+  font-size: 2.5rem;
+}
+.arrow {
+  padding: 0.2rem;
+  cursor: pointer;
+  right: 50%;
+}
+.center {
+  color: gray;
+}
+.caption {
+  position: absolute;
+  width: 100%;
+}
+.header {
+  background-image: url("../SharePa_landing_webpage_V2_top\ header\ bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  max-width: 100%;
+}
+
+.logo {
+  width: 18.5rem;
+  align-items: center;
+  box-sizing: content-box;
+  padding-top: 10rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: unset;
+}
+.heading1 {
+  color: #c21723;
+  padding-left: 1rem;
+  padding-top: 3.5rem;
+  line-height: 5rem;
+  font-size: 4.4rem;
+}
+.list_img {
+  padding-left: 5.5rem;
+}
+.list_item {
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.listimg {
+  width: 4.5rem;
+}
+.list_1 {
+  padding-left: 3rem;
+}
+.heading2 {
+  /* line-height: 5.4rem; */
+  color: #440197;
+  font-size: 2.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  justify-content: end;
+  padding-left: 2rem;
+  margin-top: 10px;
+}
+.for_more {
+  padding-left: 6rem;
+  color: #102130;
+}
+.bi-envelope {
+  font-size: 2.4rem;
+  padding-top: 5rem;
+}
+.info_mail {
+  font-size: 1.8rem;
+}
+.info_title {
+  font-size: 2.4rem;
+}
+.bi-telephone-outbound {
+  font-size: 2.4rem;
+}
+.header_left {
+  padding-top: 10rem;
+  padding-right: 8rem;
+}
+#mobile_info {
+  box-shadow: rgba(0, 0, 0, 0.3) 0rem 2rem 38rem,
+    rgba(0, 0, 0, 0.22) 0rem 1.5rem 1.2rem;
+  border: 0.1rem solid rgb(190, 190, 190);
+  background: #ffffff;
+  padding: 1rem 2.5rem;
+  border-radius: 5%;
+  font-family: "Poppins", sans-serif;
+  padding-top: 1rem;
+}
+.second_col {
+  padding-top: 2.5rem;
+  padding-left: 11.2rem;
+  padding-right: 9rem;
+  color: #440197;
+  width: 50%;
+}
+.register_text {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: #440197;
+}
+.get_text {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  color: #440197;
+  font-weight: 600;
+}
+.form_icon i {
+  position: absolute;
+  font-size: 2rem;
+}
+.form_icon {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.icon {
+  padding: 0.5rem;
+  min-width: 6.8rem;
+}
+.input-field {
+  border: 0.1rem solid rgb(0, 0, 0);
+  border-radius: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-left: 3rem;
+  text-align: left;
+  color: black;
+}
+.bi-phone {
+  font-size: 1.8rem;
+  padding-left: 1rem;
+}
+.sub-btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.8rem 3rem;
+  border: 0.1rem solid #888;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.25);
+  background-color: #440197;
+}
+.sub-btn samp {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.sub-btn:hover {
+  background-color: #440197;
+}
+.second_header {
+  background-image: url("../bg\ patch\ up.png");
+  background-repeat: no-repeat;
+  background-position-y: 30.2rem;
+}
+.second_section {
+  padding-top: 8rem;
+  text-align: center;
+}
+.second_section_heading {
+  font-size: 3.5rem;
+  color: #440197;
+  font-weight: 700;
+  text-align: center;
+}
+.second_section_heading strong {
+  font-size: 4rem;
+  color: #c21723;
+}
+.second_section_text {
+  text-align: center;
+}
+.second_section_pareghaf {
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+}
+.second_section_third {
+  padding: 1.8rem;
+  font-family: "Poppins", sans-serif;
+}
+.row-cols-5 {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0rem 0rem 0rem,
+    rgba(0, 0, 0, 0.2) 0rem 0.5rem 0rem;
+  border: 0rem solid #888;
+  border-radius: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 0.8rem;
+  background: white;
+}
+.section_3th_img {
+  width: 60rem;
+  height: 50rem;
+}
+.multi_level_1title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #002950;
+  padding-left: 1rem;
+}
+.multi_level_New_Member {
+  padding-left: 7rem;
+  padding-top: 0.6rem;
+  font-weight: 700;
+  color: #c21723;
+  font-size: 2.5rem;
+}
+.list_item_multi {
+  padding-bottom: 1.8rem;
+}
+.multi_level_list {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.second_heading2 {
+  margin-left: 1.8rem;
+  font-size: 1.6rem;
+  margin-top: 1 rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #002950;
+}
+.trd_section {
+  background-image: url("../images/Testimonila/Background.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 700px 500px;
+}
+.section3rd_pareghaf {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.star_icon {
+  font-size: 2.2rem;
+  color: yellow;
+}
+.icon_2 {
+  text-align: end;
+}
+.t_icon_2 {
+  transform: rotateY(180deg);
+}
+.subject {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #002950;
+}
+.review-box {
+  width: 100%;
+  height: 32rem;
+  padding: 1rem 1rem;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+.profile {
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.profile img {
+  width: 7rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+.user_name h3 {
+  font-weight: 700;
+  color: #102130;
+}
+.user_name p {
+  font-size: 1.6rem;
+  color: #102130;
+}
+.arrow {
+  text-align: end;
+}
+#slide {
+  transition: 0.5s;
+}
+
+.user_img {
+  display: flexbox;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.user_btn {
+  text-align: end;
+  border: 0px;
+}
+.faq-bg {
+  background-image: url("../bg\ patch\ up.png");
+  background-repeat: no-repeat;
+  background-position-y: 14.2rem;
+}
+.faq {
+  text-align: center;
+}
+.faq-accordion {
+  padding: 2rem;
+}
+.accordion-header {
+  padding-top: 0rem !important;
+}
+.accordion-title {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #102130;
+}
+.accordion-title strong {
+  font-size: 2rem;
+  color: #c21723;
+}
+.collapsed samp {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.collapsed strong {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.collapsed {
+  background-color: rgba(151, 148, 148, 0.2);
+}
+.accordion-item {
+  border: 0rem solid rgba(151, 148, 148, 0.2);
+}
+.accordion-body {
+  background-color: rgba(151, 148, 148, 0.2);
+  text-align: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+.accordion-button {
+  padding: 2rem;
+}
+.accordion-button:not(.collapsed) {
+  background-color: rgba(151, 148, 148, 0.2);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../images/FAQ/plus.png");
+}
+.accordion-button::after {
+  background-image: url("../images/FAQ/sub.png");
+}
+.accordion-body p {
+  text-align: justify;
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
+.accordion-button:focus {
+  border-color: rgba(151, 148, 148, 0.2);
+  box-shadow: 0 0 0 0.25rem rgba(151, 148, 148, 0.2);
+}
+.show {
+  border-color: rgba(151, 148, 148, 0.2);
+  box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(151, 148, 148, 0.2);
+}
+.youtb {
+  width: 100%;
+  height: fit-content;
+}
+.footer_section {
+  background-color: rgb(245, 245, 245);
+}
+.footer {
+  text-align: center;
+  padding-top: 6rem;
+  color: #340f61;
+}
+.footer p {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+.address samp {
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.end {
+  padding: 0rem 0rem;
+}
+.end img {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .header {
+    background-image: url("../SharePa_landing_webpage_V2_top\ header\ bg.png");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 10%;
+    max-width: 100%;
+  }
+  .heading1 {
+    font-size: small;
+    padding-top: 0%;
+    line-height: 2rem;
+  }
+  .header_left {
+    padding-right: 1rem;
+  }
+  .container {
+    box-sizing: content-box;
+  }
+  .list-group {
+    margin-bottom: 0rem;
+  }
+}
